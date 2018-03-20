@@ -10,13 +10,17 @@
         </div>
         <div class="aboutContent">
             <h2>What is the PERT method?</h2>
-            <p>Time estimation. It's somtehing we're often required to do as programmers, but it's not necessarily something we're always good at. Indeed, many of us quote time without any idea or comprehension of the problem at hand. Others will use a blanket time estimate like the famous "2 weeks" catchall. But, this often renders poor results. Either the estimate is way off, missing the deadline and undermining your trustworthiness or taking only a day when the customer was expecting (and may have already paid for) 2 weeks. This is what makes the Program Evaluation and Review Technique or PERT method very useful.</p>
+            <p>Time estimation. It's something we're often required or expected to do as programmers, but it's not necessarily something we're always good at. Indeed, some of us quote time without any comprehension of the problem at hand. Others use a blanket estimate like the popular "2 weeks" catchall. But this often renders poor results. Often the estimate is way off, causing a deadline to be missed and undermining your reputation or taking only a day when the customer was expecting (and may have already paid for) 2 weeks. This is what makes the Program Evaluation and Review Technique or PERT method very useful.</p>
 
             <h3>The Method</h3>
-            <p>The premise of this method is simple and addresses the problem of accuracy in time estimation. First, our estimates should take into account, several possible cases. For this, we'll consider 3: Best Case, Nominal Case, and Worst Case. We also need to allow some variance in our estimate. An estimate of "Four o'clock on Friday" is very precise, but it's also extremely difficult to meet. We want to give ourselves a larger target that will gurantee the successful fulfillment of the estimate. So instead of "Four o'clock Friday", we can say "This will be done Friday, give or take a day". This communicates that Thursday and Monday are possible completion dates and should be regarded as equally viable and acceptable as the Friday target.</p>
+            <p>The premise of this method is simple and addresses the problem of accuracy in time estimation. PERT based estimates take into account, three possible cases: Optimistic Case, Nominal Case, and Pessimistic Case. The optimistic and pessimistic cases are wildly optimistic and pessimistic, respectively. The optimistic case assumes absolutely perfect use of time, no obstacles, nothing that would remotely hinder the project. The pessimistic case assumes everything short of all-out nuclear war. By using three separate estimates, we get a better picture of what the likely outcome will be. 
+            
+            <h4>Accuracy vs. Preciseness</h4>
+            We also need to allow some variance in our estimate. An estimate of "Four o'clock on Friday" is very precise, but it's also extremely difficult to meet. The PERT method aims at a larger target that will guarantee the successful fulfillment of the estimate. So instead of "Four o'clock Friday", we can say "This will be done Friday, give or take a day". This communicates that Thursday and Monday are possible completion dates and should be regarded as equally viable and acceptable as the Friday target. We can utilize our best and worst case estimates to come up with a reasonable delta.</p>
 
             <h3>The Forumla</h3>
-            <p></p>
+            <p class="aboutFormula">Base estimate: (O + 4N + P)/6</p>
+            <p class="aboutFormula">Delta estimate: (O - P)/6</p>
         </div>
     </body>
     <script type="text/javascript" src="/main.js"></script>
