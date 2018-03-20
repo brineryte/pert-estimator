@@ -8,6 +8,32 @@
             <h1>Pert Estimator</h1>
             <a href="/about.html"><button type="button" class="headerButton">About</button></a>
         </div>
+        <div class="container">
+            <div class="inputs">
+                <div class="bestCase">
+                    <label for="bestInput">Best Case (O)</label>
+                    <input type="number" id="bestInput" />
+                </div>
+                <div class="likelyCase">
+                    <label for="likelyInput">Likely Case (N)</label>
+                    <input type="number" id="likelyInput" />
+                </div>
+                <div class="worstCase">
+                    <label for="worstInput">Worst Case (P)</label>
+                    <input type="number" id="worstInput" />
+                </div>
+            </div>      
+            <div class="formulaContainer">
+                <div class="formula">
+                    Estimated Time: (<span class="O">O</span> + 4<span class="N">N</span> + <span class="P">P</span>)/6
+                    <br/><br/>
+                    Deviation: (<span class="P">P</span> − <span class="O">O</span>) / 6 
+                </div>                
+            </div>  
+            <div class="output">
+                hi
+            </div>    
+        </div>
     </body>
     <script type="text/javascript" src="/main.js"></script>
 </html>

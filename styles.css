@@ -41,14 +41,59 @@ body {
     transition: 0.2s;
 }
 
+.container {
+    margin:auto;
+    height:100vh;
+    width:80vw;
+    font-family: 'Roboto';
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-content: center;
+    padding: 200px 50px 50px 50px;
+}
+
+.inputs, .formulaContainer, .output {
+    font-size:1.2em;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.inputs input {
+    border: solid 1px lightgray;
+    padding:5px;
+    border-radius: 3px;
+}
+
+.formulaContainer {
+    width: 80%;
+    margin-left: auto;
+    border: solid 1px lightgray;
+    border-radius: 3px;
+    padding:20px;
+    background-color: rgba(200,200,200, 0.5);
+    margin-top:30px;
+}
+
+
+.output {
+    width: 80%;
+    margin-left: auto;
+    margin-top:30px;
+    border-radius: 5px;
+    border: solid 1px lightgray;
+    background-color:white;
+    padding:100px;
+}
+
 .aboutContent {
     font-family: 'Robot', sans-serif;
     margin:auto;
     width:50vw;
     height: 100vh;
     color: purple;
-    padding: 0 50px 0 50px;
+    padding: 90px 50px 0 50px;
     background-color: rgba(255,255,255, 0.5);
     font-size: 1.2em;
-    padding-top: 130px;
 }
