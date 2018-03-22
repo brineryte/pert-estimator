@@ -44,20 +44,20 @@ body {
 .container {
     margin:auto;
     height:100vh;
-    width:80vw;
+    width:60vw;
     font-family: 'Roboto';
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
     align-content: center;
     padding: 200px 50px 50px 50px;
 }
 
 .inputs, .formulaContainer, .output {
-    font-size:1.2em;
+    font-size:1.5em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-content: center;
+    width: 100%;
 }
 
 .inputs input {
@@ -67,24 +67,24 @@ body {
 }
 
 .formulaContainer {
-    width: 80%;
-    margin-left: auto;
+    width: 100%;
     border: solid 1px lightgray;
     border-radius: 3px;
-    padding:20px;
+    padding-top:50px;
+    padding-bottom: 50px;
     background-color: rgba(200,200,200, 0.5);
     margin-top:30px;
 }
 
 
 .output {
-    width: 80%;
-    margin-left: auto;
+    width: 100%;
     margin-top:30px;
+    padding-top:50px;
+    padding-bottom: 50px;
     border-radius: 5px;
     border: solid 1px lightgray;
     background-color:white;
-    padding:100px;
 }
 
 .aboutContent {
