@@ -9,29 +9,41 @@
             <a href="/about.html"><button type="button" class="headerButton">About</button></a>
         </div>
         <div class="container">
+            <div class="howTo">Below, enter your best, likely, and worst-case estimates for your project. Then select the appropriate metric. for more detilaed information see the About section.</div>
             <div class="inputs">
                 <div class="bestCase">
-                    <label for="bestInput">Best Case (O)</label>
+                    <label for="bestInput">Best Case (O)</label><br/>
                     <input type="number" id="bestInput" />
                 </div>
                 <div class="likelyCase">
-                    <label for="likelyInput">Likely Case (N)</label>
+                    <label for="likelyInput">Likely Case (N)</label><br/>
                     <input type="number" id="likelyInput" />
                 </div>
                 <div class="worstCase">
-                    <label for="worstInput">Worst Case (P)</label>
+                    <label for="worstInput">Worst Case (P)</label><br/>
                     <input type="number" id="worstInput" />
+                </div>
+                <div class="selectContainer">
+                    <label for="metricSelect">Metric: </label><br/>
+                    <select class="metricSelect">
+                        <option value="day">day(s)</option>
+                        <option value="hour">hour(s)</option>
+                        <option value="month">month(s)</option>
+                        <option value="week">week(s)</option>
+                    </select>
                 </div>
             </div>      
             <div class="formulaContainer">
                 <div class="formula">
-                    Base estimate: (<span class="O">O</span> + 4<span class="N">N</span> + <span class="P">P</span>)/6
+                    Base estimate: (<span class="O">O</span> + 4(<span class="N">N</span>) + <span class="P">P</span>)/6 = <span class="estimate"></span>
                     <br/><br/>
-                    Deviation: (<span class="P">P</span> − <span class="O">O</span>) / 6 
+                    Deviation: (<span class="P">P</span> − <span class="O">O</span>) / 6 = <span class="deviation"></span>
                 </div>                
             </div>  
-            <div class="output">
-                hi
+            <div class="outputContainer">
+                <div class="output">
+                    I have estimated that this project can be completed in <span class="estimate"></span> <span class="metricOut"></span>(s) give or take <span class="deviation"></span> <span class="metricOut"></span>(s).
+                </div>
             </div>    
         </div>
     </body>

@@ -51,12 +51,22 @@ body {
     padding: 200px 50px 50px 50px;
 }
 
-.inputs, .formulaContainer {
+.howTo {
+    font-size:1em;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.inputs, .formulaContainer, .outputContainer {
     font-size:1.5em;
     display: flex;
     justify-content: space-evenly;
     align-content: center;
     width: 100%;
+    flex-wrap: wrap
 }
 
 .inputs input {
@@ -75,15 +85,28 @@ body {
     margin-top:30px;
 }
 
-
 .output {
+    justify-content: flex-start;
     width: 100%;
     margin-top:30px;
-    padding-top:50px;
-    padding-bottom: 50px;
+    padding:20px;
     border-radius: 5px;
     border: solid 1px lightgray;
     background-color:white;
+}
+
+.output p {
+    padding: 50px;
+}
+
+.estimate, .deviation {
+    color:purple;
+}
+
+.metricSelect {
+    border: solid 1px lightgray;
+    padding:5px;
+    border-radius: 3px;
 }
 
 .aboutContent {

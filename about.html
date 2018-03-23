@@ -10,17 +10,27 @@
         </div>
         <div class="aboutContent">
             <h2>What is the PERT method?</h2>
-            <p>Time estimation. It's something we're often required or expected to do as programmers, but it's not necessarily something we're always good at. Indeed, some of us quote time without any comprehension of the problem at hand. Others use a blanket estimate like the popular "2 weeks" catchall. But this often renders poor results. Often the estimate is way off, causing a deadline to be missed and undermining your reputation or taking only a day when the customer was expecting (and may have already paid for) 2 weeks. This is what makes the Program Evaluation and Review Technique or PERT method very useful.</p>
+            <p>Time estimation. It's something we're often required or expected to do as programmers, but it's not necessarily something we're always good at. Indeed, some of us quote time without any comprehension of the problem at hand. Others use a blanket estimate like the popular "2 weeks" catchall. But this often renders poor results. Often the estimate is way off, causing a deadline to be missed and undermining your reputation or taking only a day when the customer was expecting (and may have already paid for) 2 weeks. This is what makes the <strong>Program Evaluation and Review Technique</strong> or <strong>PERT</strong> method very useful.</p>
 
             <h3>The Method</h3>
-            <p>The premise of this method is simple and addresses the problem of accuracy in time estimation. PERT based estimates take into account, three possible cases: Optimistic Case, Nominal Case, and Pessimistic Case. The optimistic and pessimistic cases are wildly optimistic and pessimistic, respectively. The optimistic case assumes absolutely perfect use of time, no obstacles, nothing that would remotely hinder the project. The pessimistic case assumes everything short of all-out nuclear war. By using three separate estimates, we get a better picture of what the likely outcome will be. 
+            <p>The premise of this method is simple and addresses the problem of accuracy in time estimation. PERT based estimates take into account three possible cases: <strong>Optimistic Case, Nominal Case, and Pessimistic Case</strong>. The optimistic and pessimistic cases are wildly optimistic and pessimistic, respectively. The optimistic case assumes absolutely perfect use of time, no obstacles, nothing that would remotely hinder the project. The pessimistic case assumes everything short of all-out nuclear war. By using three separate estimates, we get a better picture of what the likely outcome will be. 
             
             <h4>Accuracy vs. Preciseness</h4>
             We also need to allow some variance in our estimate. An estimate of "Four o'clock on Friday" is very precise, but it's also extremely difficult to meet. The PERT method aims at a larger target that will guarantee the successful fulfillment of the estimate. So instead of "Four o'clock Friday", we can say "This will be done Friday, give or take a day". This communicates that Thursday and Monday are possible completion dates and should be regarded as equally viable and acceptable as the Friday target. We can utilize our best and worst case estimates to come up with a reasonable delta.</p>
 
-            <h3>The Forumla</h3>
-            <p class="aboutFormula">Base estimate: (O + 4N + P)/6</p>
-            <p class="aboutFormula">Delta estimate: (O - P)/6</p>
+            <h3>The Formula</h3>
+            <p class="aboutFormula"><strong>O</strong> = Optimistic Case, <strong>N</strong> = Nominal Case, <strong>P</strong> = Pessimistic Case</p>
+            <p class="aboutFormula"><strong>Base estimate</strong>: (O + 4N + P)/6  &nbsp;<em>This gives you a weighted average time</em>.</p> 
+            <p class="aboutFormula"><strong>Delta estimate</strong>: (O - P)/6  &nbsp;<em>This gives you the standard deviation</em>.</p> 
+            <br/>
+
+            <h3>Resources and Acknowledgements</h3>
+            <p>I did not come up with this myself, of course but learned about it from a book called <u>The Clean Coder: A Code of Conduct For Professional Coders</u> by Robert "Uncle Bob" Martin. Below you'll find some useful links related to this method.</p>
+
+            <a href="https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique">PERT Wikipedia</a><br/>
+            <a href="https://www.amazon.com/Clean-Coder-Conduct-Professional-Programmers/dp/0137081073">The Clean Coder</a>
+            <br/>
+            <br/>
         </div>
     </body>
     <script type="text/javascript" src="/main.js"></script>
