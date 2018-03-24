@@ -1,15 +1,15 @@
 <html>
     <head>
-        <title>Pert Estimator</title>
+        <title>PERT Estimator</title>
         <link rel="stylesheet" href="/styles.css">
     </head>
     <body>
         <div class="header">
-            <h1>Pert Estimator</h1>
+            <a href="/"><h1 class="headerTitle">PERT Estimator</h1></a>
             <a href="/about.html"><button type="button" class="headerButton">About</button></a>
         </div>
         <div class="container">
-            <div class="howTo">Below, enter your best, likely, and worst-case estimates for your project. Then select the appropriate metric. for more detilaed information see the About section.</div>
+            <div class="howTo">Below, enter your best, likely, and worst-case estimates for your project. Then select the appropriate metric. For more detailed information see the About section.</div>
             <div class="inputs">
                 <div class="bestCase">
                     <label for="bestInput">Best Case (O)</label><br/>
@@ -42,9 +42,9 @@
             </div>  
             <div class="outputContainer">
                 <div class="output">
-                    I have estimated that this project can be completed in <span class="estimate"></span> <span class="metricOut"></span>(s) give or take <span class="deviation"></span> <span class="metricOut"></span>(s).
+                    I have estimated that this project can be completed in <span class="estimate"></span> <span class="metricOut" id="metricEst"></span> give or take <span class="deviation"></span> <span class="metricOut" id="metricDev"></span>.
                 </div>
-            </div>    
+            </div>     
         </div>
     </body>
     <script type="text/javascript" src="/main.js"></script>

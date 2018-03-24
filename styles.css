@@ -24,6 +24,15 @@ body {
     box-shadow: 0px 3px 15px 5px gray;
 }
 
+.header a {
+    text-decoration: none;
+}
+
+.headerTitle {
+    cursor: pointer;
+    color:white;
+}
+
 .headerButton {
     color:white;
     font-size: 1.5em;
@@ -117,4 +126,14 @@ body {
     padding: 90px 50px 0 50px;
     background-color: rgba(255,255,255, 0.5);
     font-size: 1.2em;
+}
+
+.githubButton {
+    border: solid 1px gray;
+    border-radius:3px;
+    background-color: purple;
+    color: white;
+    font-size:1em;
+    cursor: pointer;
+    margin:20px;
 }

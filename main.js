@@ -11,10 +11,12 @@ const P = document.getElementsByClassName("P");
 
 const estimateOut = document.getElementsByClassName("estimate");
 const deviationOut = document.getElementsByClassName("deviation");
-const metricOut = document.getElementsByClassName("metricOut");
+const metricEstOut = document.getElementById("metricEst");
+const metricDevOut = document.getElementById("metricDev");
 
 //default the metric
-[].forEach.call( metricOut, el => el.innerHTML = currentMetric.value );
+metricEstOut.innerHTML = currentMetric.value;
+metricDevOut,innerHTML = currentMetric.value;
 
 addEvent(bestInput, "keyup");
 addEvent(likelyInput, "keyup");
@@ -30,17 +32,29 @@ function addEvent(element, event){
 }
 
 function updateDisplay() {
-    let metric = metricSelect[0].value;
+    let metricEst = metricSelect[0].value; 
+    let metricDev = metricSelect[0].value;
     let opt = bestInput.value != '' ? bestInput.value : 0;
     let nom = likelyInput.value != '' ? likelyInput.value : 0;
     let pes = worstInput.value != '' ? worstInput.value : 0;
     let estimate = (( 4*nom + 1*opt + 1*pes )/6).toFixed(1);
     let deviation = ((1*pes - 1*opt)/6).toFixed(1);
 
+    if(estimate != 1){
+        metricEst += 's';
+    }
+    if(deviation != 1){
+        metricDev += 's';
+    }
+
     [].forEach.call(O, el => el.innerHTML = opt);
     [].forEach.call(N, el => el.innerHTML = nom);
     [].forEach.call(P, el => el.innerHTML = pes);
     [].forEach.call(estimateOut, el => el.innerHTML = estimate);
     [].forEach.call(deviationOut, el => el.innerHTML = deviation);
-    [].forEach.call(metricOut, el => el.innerHTML = metric);
+    
+    metricEstOut.innerHTML = metricEst;
+    metricDevOut.innerHTML = metricDev;
+
+
 }
