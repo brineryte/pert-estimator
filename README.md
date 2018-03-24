@@ -8,4 +8,4 @@ I made this for 2 reasons:
 1. To make a useful tool for myself and other developers who struggle with estimating time for their projects.
 2. To make something with no libraries! This is built entirely with HTML, CSS, and JS (and some Google fonts).
 
-I hope you find it uesful!
+I hope you find it useful!
